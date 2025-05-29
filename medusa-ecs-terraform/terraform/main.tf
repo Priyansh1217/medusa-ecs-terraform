@@ -13,7 +13,7 @@ module "iam" {
 module "ecs" {
   source             = "./modules/ecs"
   name               = "medusa"
-  container_image    = "medusajs/medusa:latest"
+  container_image    = "148761683077.dkr.ecr.us-east-1.amazonaws.com/medusa-app:latest"
   cpu                = "512"
   memory             = "1024"
   execution_role_arn = module.iam.execution_role_arn
